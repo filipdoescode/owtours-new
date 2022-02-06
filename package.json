@@ -1,0 +1,20 @@
+{
+  "name": "owltours",
+  "version": "1.0.0",
+  "description": "landing page for owltours",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -o css/style.prefix.css css/style.concat.css"
+  },
+  "author": "Filip Vasilovski",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "concat": "^1.0.3",
+    "node-sass": "^5.0.0",
+    "postcss-cli": "^8.3.1"
+  }
+}
